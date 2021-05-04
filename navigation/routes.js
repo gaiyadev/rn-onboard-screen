@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import OnboardScreen from "../screens/onboard/OnboardScreen";
 import BottomTabs from "../navigation/tabs/BottomTabs";
-import { Button } from "react-native";
+import { FONTS } from "../constants";
 
 const OnboardStack = createStackNavigator();
 
@@ -26,7 +26,7 @@ const Onboard = () => {
             },
             headerTintColor: "#fff",
             headerTitleStyle: {
-              fontFamily: "Roboto-Black",
+              ...FONTS.h2,
             },
             // headerLeft: () => (
             //   <Button

@@ -10,8 +10,8 @@ import {
 } from "react-native";
 import { onBoardings } from "../../data/onboard";
 import { theme } from "../../constants";
-
 const { COLORS, FONTS, SIZES } = theme;
+
 const OnboardScreen = ({ navigation }) => {
   const [completed, setCompleted] = useState(false);
 
@@ -106,7 +106,7 @@ const OnboardScreen = ({ navigation }) => {
                 backgroundColor: COLORS.blue,
               }}
               onPress={() => {
-                navigation.navigate("HomeScreen");
+                navigation.navigate("WelcomeScreen");
               }}
             >
               <Text style={{ ...FONTS.h1, color: COLORS.white }}>
